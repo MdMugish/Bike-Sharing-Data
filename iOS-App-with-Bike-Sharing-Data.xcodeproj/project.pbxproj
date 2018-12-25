@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE2CF3D321CCA60700B9086B /* SelectDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CF3D221CCA60700B9086B /* SelectDayVC.swift */; };
+		CE2CF3D521CD569100B9086B /* MostFrequentTimesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CF3D421CD569100B9086B /* MostFrequentTimesVC.swift */; };
+		CE2CF3D721CD56E100B9086B /* MostPopularStationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CF3D621CD56E100B9086B /* MostPopularStationsVC.swift */; };
+		CE2CF3DB21CD57AF00B9086B /* TotalAndAvgTripDurationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CF3DA21CD57AF00B9086B /* TotalAndAvgTripDurationVC.swift */; };
+		CE2CF3DD21CD57FF00B9086B /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CF3DC21CD57FF00B9086B /* UsersVC.swift */; };
+		CEA82D5F21CB7239004250B2 /* SelectCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA82D5E21CB7239004250B2 /* SelectCityVC.swift */; };
+		CEA82D6321CB7410004250B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA82D6221CB7410004250B2 /* User.swift */; };
+		CEA82D6521CB9AE6004250B2 /* selectMonthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA82D6421CB9AE6004250B2 /* selectMonthVC.swift */; };
+		CEB70F4121CA3E8600556EA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB70F4021CA3E8600556EA3 /* AppDelegate.swift */; };
+		CEB70F4321CA3E8600556EA3 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB70F4221CA3E8600556EA3 /* WelcomeVC.swift */; };
+		CEB70F4621CA3E8600556EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB70F4421CA3E8600556EA3 /* Main.storyboard */; };
+		CEB70F4821CA3E8900556EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB70F4721CA3E8900556EA3 /* Assets.xcassets */; };
+		CEB70F4B21CA3E8900556EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB70F4921CA3E8900556EA3 /* LaunchScreen.storyboard */; };
+		CEB70F5421CA4BC600556EA3 /* BorderButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB70F5321CA4BC600556EA3 /* BorderButtons.swift */; };
+		CFB6D79D97C3596BCB22984A /* Pods_iOS_App_with_Bike_Sharing_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521BF345E6CEC9E7449B9523 /* Pods_iOS_App_with_Bike_Sharing_Data.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		521BF345E6CEC9E7449B9523 /* Pods_iOS_App_with_Bike_Sharing_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_App_with_Bike_Sharing_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CA250D4FF002D73FCE2CA4 /* Pods-iOS-App-with-Bike-Sharing-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-App-with-Bike-Sharing-Data.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-App-with-Bike-Sharing-Data/Pods-iOS-App-with-Bike-Sharing-Data.release.xcconfig"; sourceTree = "<group>"; };
+		CE2CF3D221CCA60700B9086B /* SelectDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDayVC.swift; sourceTree = "<group>"; };
+		CE2CF3D421CD569100B9086B /* MostFrequentTimesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostFrequentTimesVC.swift; sourceTree = "<group>"; };
+		CE2CF3D621CD56E100B9086B /* MostPopularStationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularStationsVC.swift; sourceTree = "<group>"; };
+		CE2CF3DA21CD57AF00B9086B /* TotalAndAvgTripDurationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalAndAvgTripDurationVC.swift; sourceTree = "<group>"; };
+		CE2CF3DC21CD57FF00B9086B /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		CEA82D5E21CB7239004250B2 /* SelectCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCityVC.swift; sourceTree = "<group>"; };
+		CEA82D6221CB7410004250B2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CEA82D6421CB9AE6004250B2 /* selectMonthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectMonthVC.swift; sourceTree = "<group>"; };
+		CEB70F3D21CA3E8600556EA3 /* iOS-App-with-Bike-Sharing-Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-App-with-Bike-Sharing-Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB70F4021CA3E8600556EA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEB70F4221CA3E8600556EA3 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		CEB70F4521CA3E8600556EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEB70F4721CA3E8900556EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEB70F4A21CA3E8900556EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEB70F4C21CA3E8900556EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB70F5321CA4BC600556EA3 /* BorderButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButtons.swift; sourceTree = "<group>"; };
+		DA466FC236CD89A35805D7EC /* Pods-iOS-App-with-Bike-Sharing-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-App-with-Bike-Sharing-Data.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-App-with-Bike-Sharing-Data/Pods-iOS-App-with-Bike-Sharing-Data.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEB70F3A21CA3E8600556EA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6D79D97C3596BCB22984A /* Pods_iOS_App_with_Bike_Sharing_Data.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024A3E973D557AA8C98CFAB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521BF345E6CEC9E7449B9523 /* Pods_iOS_App_with_Bike_Sharing_Data.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA82D5C21CB71FA004250B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEA82D6221CB7410004250B2 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA82D5D21CB720A004250B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEB70F4221CA3E8600556EA3 /* WelcomeVC.swift */,
+				CEA82D5E21CB7239004250B2 /* SelectCityVC.swift */,
+				CEA82D6421CB9AE6004250B2 /* selectMonthVC.swift */,
+				CE2CF3D221CCA60700B9086B /* SelectDayVC.swift */,
+				CE2CF3D421CD569100B9086B /* MostFrequentTimesVC.swift */,
+				CE2CF3D621CD56E100B9086B /* MostPopularStationsVC.swift */,
+				CE2CF3DA21CD57AF00B9086B /* TotalAndAvgTripDurationVC.swift */,
+				CE2CF3DC21CD57FF00B9086B /* UsersVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CEB70F3421CA3E8600556EA3 = {
+			isa = PBXGroup;
+			children = (
+				CEB70F3F21CA3E8600556EA3 /* iOS-App-with-Bike-Sharing-Data */,
+				CEB70F3E21CA3E8600556EA3 /* Products */,
+				D5CEC47506633DEAFFAD377F /* Pods */,
+				024A3E973D557AA8C98CFAB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEB70F3E21CA3E8600556EA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB70F3D21CA3E8600556EA3 /* iOS-App-with-Bike-Sharing-Data.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB70F3F21CA3E8600556EA3 /* iOS-App-with-Bike-Sharing-Data */ = {
+			isa = PBXGroup;
+			children = (
+				CEB70F4021CA3E8600556EA3 /* AppDelegate.swift */,
+				CEA82D5C21CB71FA004250B2 /* Model */,
+				CEB70F5221CA4BA300556EA3 /* Views */,
+				CEA82D5D21CB720A004250B2 /* Controller */,
+				CEB70F4421CA3E8600556EA3 /* Main.storyboard */,
+				CEB70F4721CA3E8900556EA3 /* Assets.xcassets */,
+				CEB70F4921CA3E8900556EA3 /* LaunchScreen.storyboard */,
+				CEB70F4C21CA3E8900556EA3 /* Info.plist */,
+			);
+			path = "iOS-App-with-Bike-Sharing-Data";
+			sourceTree = "<group>";
+		};
+		CEB70F5221CA4BA300556EA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEB70F5321CA4BC600556EA3 /* BorderButtons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5CEC47506633DEAFFAD377F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA466FC236CD89A35805D7EC /* Pods-iOS-App-with-Bike-Sharing-Data.debug.xcconfig */,
+				78CA250D4FF002D73FCE2CA4 /* Pods-iOS-App-with-Bike-Sharing-Data.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEB70F3C21CA3E8600556EA3 /* iOS-App-with-Bike-Sharing-Data */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEB70F4F21CA3E8900556EA3 /* Build configuration list for PBXNativeTarget "iOS-App-with-Bike-Sharing-Data" */;
+			buildPhases = (
+				E7E530CCD86EBB84CF178EBB /* [CP] Check Pods Manifest.lock */,
+				CEB70F3921CA3E8600556EA3 /* Sources */,
+				CEB70F3A21CA3E8600556EA3 /* Frameworks */,
+				CEB70F3B21CA3E8600556EA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-App-with-Bike-Sharing-Data";
+			productName = "iOS-App-with-Bike-Sharing-Data";
+			productReference = CEB70F3D21CA3E8600556EA3 /* iOS-App-with-Bike-Sharing-Data.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEB70F3521CA3E8600556EA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Mohammad Mugish";
+				TargetAttributes = {
+					CEB70F3C21CA3E8600556EA3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = CEB70F3821CA3E8600556EA3 /* Build configuration list for PBXProject "iOS-App-with-Bike-Sharing-Data" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEB70F3421CA3E8600556EA3;
+			productRefGroup = CEB70F3E21CA3E8600556EA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEB70F3C21CA3E8600556EA3 /* iOS-App-with-Bike-Sharing-Data */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEB70F3B21CA3E8600556EA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB70F4B21CA3E8900556EA3 /* LaunchScreen.storyboard in Resources */,
+				CEB70F4821CA3E8900556EA3 /* Assets.xcassets in Resources */,
+				CEB70F4621CA3E8600556EA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7E530CCD86EBB84CF178EBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-App-with-Bike-Sharing-Data-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEB70F3921CA3E8600556EA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB70F4321CA3E8600556EA3 /* WelcomeVC.swift in Sources */,
+				CEB70F5421CA4BC600556EA3 /* BorderButtons.swift in Sources */,
+				CE2CF3D321CCA60700B9086B /* SelectDayVC.swift in Sources */,
+				CEB70F4121CA3E8600556EA3 /* AppDelegate.swift in Sources */,
+				CE2CF3D521CD569100B9086B /* MostFrequentTimesVC.swift in Sources */,
+				CEA82D6321CB7410004250B2 /* User.swift in Sources */,
+				CE2CF3DB21CD57AF00B9086B /* TotalAndAvgTripDurationVC.swift in Sources */,
+				CEA82D5F21CB7239004250B2 /* SelectCityVC.swift in Sources */,
+				CE2CF3DD21CD57FF00B9086B /* UsersVC.swift in Sources */,
+				CE2CF3D721CD56E100B9086B /* MostPopularStationsVC.swift in Sources */,
+				CEA82D6521CB9AE6004250B2 /* selectMonthVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEB70F4421CA3E8600556EA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB70F4521CA3E8600556EA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEB70F4921CA3E8900556EA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEB70F4A21CA3E8900556EA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEB70F4D21CA3E8900556EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEB70F4E21CA3E8900556EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEB70F5021CA3E8900556EA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA466FC236CD89A35805D7EC /* Pods-iOS-App-with-Bike-Sharing-Data.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 898D22Z9A6;
+				INFOPLIST_FILE = "iOS-App-with-Bike-Sharing-Data/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Softech.iOS-App-with-Bike-Sharing-Data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEB70F5121CA3E8900556EA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78CA250D4FF002D73FCE2CA4 /* Pods-iOS-App-with-Bike-Sharing-Data.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 898D22Z9A6;
+				INFOPLIST_FILE = "iOS-App-with-Bike-Sharing-Data/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Softech.iOS-App-with-Bike-Sharing-Data";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEB70F3821CA3E8600556EA3 /* Build configuration list for PBXProject "iOS-App-with-Bike-Sharing-Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB70F4D21CA3E8900556EA3 /* Debug */,
+				CEB70F4E21CA3E8900556EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEB70F4F21CA3E8900556EA3 /* Build configuration list for PBXNativeTarget "iOS-App-with-Bike-Sharing-Data" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEB70F5021CA3E8900556EA3 /* Debug */,
+				CEB70F5121CA3E8900556EA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEB70F3521CA3E8600556EA3 /* Project object */;
+}

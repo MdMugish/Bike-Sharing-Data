@@ -1,0 +1,6 @@
+framework module Pods_iOS_App_with_Bike_Sharing_Data {
+  umbrella header "Pods-iOS-App-with-Bike-Sharing-Data-umbrella.h"
+
+  export *
+  module * { export * }
+}

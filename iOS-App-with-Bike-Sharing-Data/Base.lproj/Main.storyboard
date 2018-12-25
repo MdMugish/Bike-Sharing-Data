@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxf-lB-UBA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1200px-Melbourne_City_Bikes" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-C6-Fnp">
+                                        <rect key="frame" x="-30" y="0.0" width="435" height="812"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE BIKESHARE DATA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L5-kV-oqE">
+                                        <rect key="frame" x="8" y="72" width="359" height="205"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-s9-yCF" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TFO-sX-PX9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="GET STARTED">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="iFe-bh-eqZ" kind="modal" modalTransitionStyle="crossDissolve" id="HXV-ZG-lDn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="b2e-s9-yCF" secondAttribute="trailing" constant="8" id="60M-L7-VwQ"/>
+                                    <constraint firstItem="b2e-s9-yCF" firstAttribute="leading" secondItem="fxf-lB-UBA" secondAttribute="leadingMargin" constant="8" id="AK9-IK-UDZ"/>
+                                    <constraint firstItem="gxN-C6-Fnp" firstAttribute="leading" secondItem="fxf-lB-UBA" secondAttribute="leading" constant="-30" id="ArT-J3-ByN"/>
+                                    <constraint firstAttribute="bottom" secondItem="b2e-s9-yCF" secondAttribute="bottom" constant="15" id="Clu-3q-P0D"/>
+                                    <constraint firstItem="2L5-kV-oqE" firstAttribute="trailing" secondItem="fxf-lB-UBA" secondAttribute="trailingMargin" id="Eim-1B-ZT8"/>
+                                    <constraint firstAttribute="trailing" secondItem="gxN-C6-Fnp" secondAttribute="trailing" constant="-30" id="Gny-CJ-lRi"/>
+                                    <constraint firstItem="2L5-kV-oqE" firstAttribute="top" secondItem="fxf-lB-UBA" secondAttribute="topMargin" constant="20" id="Npd-du-RoF"/>
+                                    <constraint firstItem="2L5-kV-oqE" firstAttribute="leading" secondItem="fxf-lB-UBA" secondAttribute="leadingMargin" id="OET-j2-z8n"/>
+                                    <constraint firstAttribute="bottom" secondItem="gxN-C6-Fnp" secondAttribute="bottom" id="ZsK-TJ-uPH"/>
+                                    <constraint firstItem="gxN-C6-Fnp" firstAttribute="top" secondItem="fxf-lB-UBA" secondAttribute="top" id="cJX-Fp-rcb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fxf-lB-UBA" secondAttribute="bottom" id="04d-rC-yJI"/>
+                            <constraint firstAttribute="trailing" secondItem="fxf-lB-UBA" secondAttribute="trailing" id="GUy-3f-Wgt"/>
+                            <constraint firstItem="fxf-lB-UBA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hu1-WE-0hI"/>
+                            <constraint firstItem="fxf-lB-UBA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xet-Xw-Vwk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeImageView" destination="gxN-C6-Fnp" id="IWo-Kq-k5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="265" y="134"/>
+        </scene>
+        <!--Select CityVC-->
+        <scene sceneID="KnA-7l-Ong">
+            <objects>
+                <viewController id="iFe-bh-eqZ" customClass="SelectCityVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DsD-ky-Qdr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23y-wS-OHU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bike-share-for-all-image" translatesAutoresizingMaskIntoConstraints="NO" id="OKt-3x-CCp">
+                                        <rect key="frame" x="-30" y="0.0" width="435" height="812"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to see data for : " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBP-R0-pKk">
+                                        <rect key="frame" x="44.333333333333343" y="209.66666666666666" width="286.66666666666663" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="fgT-9S-FCt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Sf4-d1-uas">
+                                        <rect key="frame" x="8" y="283.66666666666669" width="359" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flu-As-pHN" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="i80-ek-f5l"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="NEW YORK">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newYorkBtn:" destination="iFe-bh-eqZ" eventType="touchUpInside" id="m1y-Bw-OlA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJs-G8-jHf" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="75" width="359" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gOA-n3-O6R"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="CHICAGO">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="chicagoBtn:" destination="iFe-bh-eqZ" eventType="touchUpInside" id="a5h-9o-lPG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtT-e1-cQL" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="150" width="359" height="50"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="shq-vV-yiA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="WASHINGTON">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="washingtonBtn:" destination="iFe-bh-eqZ" eventType="touchUpInside" id="AZn-UC-TYg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's explore some US bikeshare data!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF2-af-xNQ">
+                                        <rect key="frame" x="8" y="72" width="359" height="87.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azT-mn-ZSn">
+                                        <rect key="frame" x="8" y="15" width="34" height="30"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="c71-Rb-Ze5" kind="unwind" unwindAction="uniwndSegueWithUnwindSeg:" id="GOx-Aa-eVO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1F-Xe-lHr" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qt9-CB-BbW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextBtn:" destination="iFe-bh-eqZ" eventType="touchUpInside" id="g3b-6s-S53"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.083690900259067336" green="0.083690900259067336" blue="0.083690900259067336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="kF2-af-xNQ" secondAttribute="trailing" id="0zq-5I-IeM"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Sf4-d1-uas" secondAttribute="trailing" id="2Px-NG-hsc"/>
+                                    <constraint firstItem="z1F-Xe-lHr" firstAttribute="leading" secondItem="23y-wS-OHU" secondAttribute="leadingMargin" constant="8" id="49f-BX-ONC"/>
+                                    <constraint firstItem="kF2-af-xNQ" firstAttribute="leading" secondItem="23y-wS-OHU" secondAttribute="leadingMargin" id="7Rq-hT-dn8"/>
+                                    <constraint firstItem="BBP-R0-pKk" firstAttribute="top" secondItem="kF2-af-xNQ" secondAttribute="bottom" constant="50" id="9re-Uz-JNi"/>
+                                    <constraint firstItem="Sf4-d1-uas" firstAttribute="leading" secondItem="23y-wS-OHU" secondAttribute="leadingMargin" id="ATG-zV-aDD"/>
+                                    <constraint firstAttribute="bottom" secondItem="z1F-Xe-lHr" secondAttribute="bottom" constant="15" id="E86-7o-bHC"/>
+                                    <constraint firstAttribute="bottom" secondItem="OKt-3x-CCp" secondAttribute="bottom" id="R02-3V-lb6"/>
+                                    <constraint firstItem="BBP-R0-pKk" firstAttribute="centerX" secondItem="23y-wS-OHU" secondAttribute="centerX" id="YGa-I5-SwG"/>
+                                    <constraint firstItem="OKt-3x-CCp" firstAttribute="leading" secondItem="23y-wS-OHU" secondAttribute="leading" constant="-30" id="YpX-kV-WFT"/>
+                                    <constraint firstItem="azT-mn-ZSn" firstAttribute="top" secondItem="23y-wS-OHU" secondAttribute="top" constant="15" id="csG-X8-bKS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="z1F-Xe-lHr" secondAttribute="trailing" constant="8" id="gso-it-eBQ"/>
+                                    <constraint firstItem="Sf4-d1-uas" firstAttribute="top" secondItem="BBP-R0-pKk" secondAttribute="bottom" constant="35" id="iaL-9H-FUD"/>
+                                    <constraint firstItem="OKt-3x-CCp" firstAttribute="top" secondItem="23y-wS-OHU" secondAttribute="top" id="mYf-iC-63Y"/>
+                                    <constraint firstItem="azT-mn-ZSn" firstAttribute="leading" secondItem="23y-wS-OHU" secondAttribute="leading" constant="8" id="nqT-tp-zxu"/>
+                                    <constraint firstItem="kF2-af-xNQ" firstAttribute="top" secondItem="23y-wS-OHU" secondAttribute="topMargin" constant="20" id="s3b-lj-9BA"/>
+                                    <constraint firstAttribute="trailing" secondItem="OKt-3x-CCp" secondAttribute="trailing" constant="-30" id="uxT-jH-nQH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="23y-wS-OHU" firstAttribute="leading" secondItem="1bV-ca-5mn" secondAttribute="leading" id="97P-C8-cUs"/>
+                            <constraint firstItem="23y-wS-OHU" firstAttribute="top" secondItem="DsD-ky-Qdr" secondAttribute="top" id="U96-qt-493"/>
+                            <constraint firstAttribute="bottom" secondItem="23y-wS-OHU" secondAttribute="bottom" id="bDP-fi-6x7"/>
+                            <constraint firstItem="23y-wS-OHU" firstAttribute="trailing" secondItem="1bV-ca-5mn" secondAttribute="trailing" id="mQs-Cs-LC0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1bV-ca-5mn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aa0-W2-2v7"/>
+                    <connections>
+                        <outlet property="cityImage" destination="OKt-3x-CCp" id="U1n-oa-ryR"/>
+                        <outlet property="nextBtn" destination="z1F-Xe-lHr" id="mhR-4c-Xxb"/>
+                        <segue destination="igV-3d-UfO" kind="show" identifier="nextAfterCity" id="KqN-ww-Uof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mB3-oZ-dI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="c71-Rb-Ze5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="134"/>
+        </scene>
+        <!--Select MonthVC-->
+        <scene sceneID="1fq-DM-2p4">
+            <objects>
+                <viewController id="igV-3d-UfO" customClass="selectMonthVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vtl-Fv-9pm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lV-Ae-0ht">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bike-share-for-all-image" translatesAutoresizingMaskIntoConstraints="NO" id="uSc-Sb-SEy">
+                                        <rect key="frame" x="-30" y="0.0" width="435" height="812"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Month :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehj-pb-ZBZ">
+                                        <rect key="frame" x="122.66666666666669" y="209.66666666666666" width="130" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="JZY-QE-aa7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's explore some US bikeshare data!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83A-bY-yZZ">
+                                        <rect key="frame" x="8" y="72" width="359" height="87.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0YE-2b-Wvi">
+                                        <rect key="frame" x="8" y="10" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="uTJ-Nh-n0F" kind="unwind" unwindAction="uniwndSegueWithUnwindSeg:" id="cuc-wQ-MUE"/>
+                                        </connections>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2p-eR-bvt">
+                                        <rect key="frame" x="0.0" y="298" width="375" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7r-JG-pac" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="YzS-3f-OjL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextBtnAction:" destination="igV-3d-UfO" eventType="touchUpInside" id="RFj-0a-Wsg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.083690900260000006" green="0.083690900260000006" blue="0.083690900260000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="E7r-JG-pac" firstAttribute="leading" secondItem="5lV-Ae-0ht" secondAttribute="leadingMargin" constant="8" id="1h2-nF-u7Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="uSc-Sb-SEy" secondAttribute="bottom" id="6AK-IC-nHC"/>
+                                    <constraint firstItem="w2p-eR-bvt" firstAttribute="centerX" secondItem="5lV-Ae-0ht" secondAttribute="centerX" id="Dyj-Ht-n2G"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="E7r-JG-pac" secondAttribute="trailing" constant="8" id="RMD-ZV-aun"/>
+                                    <constraint firstItem="ehj-pb-ZBZ" firstAttribute="top" secondItem="83A-bY-yZZ" secondAttribute="bottom" constant="50" id="cxH-3J-jDE"/>
+                                    <constraint firstItem="uSc-Sb-SEy" firstAttribute="leading" secondItem="5lV-Ae-0ht" secondAttribute="leading" constant="-30" id="dD0-Fp-cn3"/>
+                                    <constraint firstItem="w2p-eR-bvt" firstAttribute="leading" secondItem="5lV-Ae-0ht" secondAttribute="leading" id="eEF-hN-l24"/>
+                                    <constraint firstItem="uSc-Sb-SEy" firstAttribute="top" secondItem="5lV-Ae-0ht" secondAttribute="top" id="ek7-bf-caG"/>
+                                    <constraint firstItem="83A-bY-yZZ" firstAttribute="leading" secondItem="5lV-Ae-0ht" secondAttribute="leadingMargin" id="iEy-id-uwy"/>
+                                    <constraint firstItem="ehj-pb-ZBZ" firstAttribute="centerX" secondItem="5lV-Ae-0ht" secondAttribute="centerX" id="iID-Tg-ut9"/>
+                                    <constraint firstItem="w2p-eR-bvt" firstAttribute="centerY" secondItem="5lV-Ae-0ht" secondAttribute="centerY" id="iJc-8u-0O8"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="83A-bY-yZZ" secondAttribute="trailing" id="iUD-Kb-1hD"/>
+                                    <constraint firstItem="83A-bY-yZZ" firstAttribute="top" secondItem="5lV-Ae-0ht" secondAttribute="topMargin" constant="20" id="j5a-5l-1Fn"/>
+                                    <constraint firstAttribute="trailing" secondItem="w2p-eR-bvt" secondAttribute="trailing" id="n5i-5T-hDl"/>
+                                    <constraint firstAttribute="bottom" secondItem="E7r-JG-pac" secondAttribute="bottom" constant="15" id="tNI-rD-6VO"/>
+                                    <constraint firstAttribute="trailing" secondItem="uSc-Sb-SEy" secondAttribute="trailing" constant="-30" id="zQH-ff-gB2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5lV-Ae-0ht" secondAttribute="bottom" id="9qe-uc-kdj"/>
+                            <constraint firstItem="5lV-Ae-0ht" firstAttribute="top" secondItem="Vtl-Fv-9pm" secondAttribute="top" id="VbA-yO-Kno"/>
+                            <constraint firstItem="5lV-Ae-0ht" firstAttribute="trailing" secondItem="Zov-4E-yAQ" secondAttribute="trailing" id="jFo-Bk-19H"/>
+                            <constraint firstItem="5lV-Ae-0ht" firstAttribute="leading" secondItem="Zov-4E-yAQ" secondAttribute="leading" id="qpI-5n-ocf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zov-4E-yAQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zbX-Ix-Hc6"/>
+                    <connections>
+                        <outlet property="monthImageView" destination="uSc-Sb-SEy" id="TsW-GI-kPs"/>
+                        <outlet property="monthPicker" destination="w2p-eR-bvt" id="NJD-sV-gvU"/>
+                        <outlet property="nextBtn" destination="E7r-JG-pac" id="pIr-c0-7aH"/>
+                        <segue destination="UBv-T2-3aC" kind="show" identifier="monthToDay" id="qAI-Tp-sqP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pu5-Qc-uvh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="uTJ-Nh-n0F" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1904.8" y="133.5832083958021"/>
+        </scene>
+        <!--Select DayVC-->
+        <scene sceneID="Oxl-fd-fe8">
+            <objects>
+                <viewController id="UBv-T2-3aC" customClass="SelectDayVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Wf-nL-Qrg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb2-7T-ZR7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bike-share-for-all-image" translatesAutoresizingMaskIntoConstraints="NO" id="BZf-oh-0LE">
+                                        <rect key="frame" x="-30" y="0.0" width="435" height="812"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Day :" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38S-pI-EAK">
+                                        <rect key="frame" x="134.66666666666666" y="209.66666666666666" width="106" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="Kn4-rP-6Nj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's explore some US bikeshare data!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0W-Rb-Ng6">
+                                        <rect key="frame" x="8" y="72" width="359" height="87.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPi-gm-K1b">
+                                        <rect key="frame" x="8" y="10" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="zZV-Ij-E18" kind="unwind" unwindAction="uniwndSegueWithUnwindSeg:" id="EOI-cv-vuU"/>
+                                        </connections>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yRd-bB-DEG">
+                                        <rect key="frame" x="0.0" y="252" width="375" height="216"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-cq-sEc" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xy6-TX-Mxn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="NEXT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tiP-yb-lXi" kind="show" id="SYw-9X-i9w"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.083690900260000006" green="0.083690900260000006" blue="0.083690900260000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="38S-pI-EAK" firstAttribute="centerX" secondItem="jb2-7T-ZR7" secondAttribute="centerX" id="3GI-zo-3e9"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="dhl-cq-sEc" secondAttribute="trailing" constant="8" id="L2l-mc-msu"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="E0W-Rb-Ng6" secondAttribute="trailing" id="S4k-cg-cNS"/>
+                                    <constraint firstAttribute="bottom" secondItem="BZf-oh-0LE" secondAttribute="bottom" id="SJD-RH-Bfu"/>
+                                    <constraint firstAttribute="bottom" secondItem="dhl-cq-sEc" secondAttribute="bottom" constant="15" id="blG-Fe-auw"/>
+                                    <constraint firstItem="BZf-oh-0LE" firstAttribute="leading" secondItem="jb2-7T-ZR7" secondAttribute="leading" constant="-30" id="guO-lF-quG"/>
+                                    <constraint firstItem="E0W-Rb-Ng6" firstAttribute="top" secondItem="jb2-7T-ZR7" secondAttribute="topMargin" constant="20" id="jyd-0v-fU1"/>
+                                    <constraint firstItem="E0W-Rb-Ng6" firstAttribute="leading" secondItem="jb2-7T-ZR7" secondAttribute="leadingMargin" id="lkk-fZ-Yoq"/>
+                                    <constraint firstItem="dhl-cq-sEc" firstAttribute="leading" secondItem="jb2-7T-ZR7" secondAttribute="leadingMargin" constant="8" id="rDz-tm-Ogn"/>
+                                    <constraint firstAttribute="trailing" secondItem="BZf-oh-0LE" secondAttribute="trailing" constant="-30" id="rZo-Yg-v3M"/>
+                                    <constraint firstItem="BZf-oh-0LE" firstAttribute="top" secondItem="jb2-7T-ZR7" secondAttribute="top" id="y3X-lL-EoA"/>
+                                    <constraint firstItem="38S-pI-EAK" firstAttribute="top" secondItem="E0W-Rb-Ng6" secondAttribute="bottom" constant="50" id="yHt-Zj-hSt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jb2-7T-ZR7" firstAttribute="leading" secondItem="fZM-Ji-biq" secondAttribute="leading" id="OfE-qS-RYs"/>
+                            <constraint firstItem="jb2-7T-ZR7" firstAttribute="top" secondItem="2Wf-nL-Qrg" secondAttribute="top" id="TlO-M8-lqS"/>
+                            <constraint firstItem="jb2-7T-ZR7" firstAttribute="trailing" secondItem="fZM-Ji-biq" secondAttribute="trailing" id="inl-V7-mWN"/>
+                            <constraint firstAttribute="bottom" secondItem="jb2-7T-ZR7" secondAttribute="bottom" id="sAn-o8-hRb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fZM-Ji-biq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OQG-gh-bi8"/>
+                    <connections>
+                        <outlet property="dayImageView" destination="BZf-oh-0LE" id="PPc-LX-c07"/>
+                        <outlet property="dayPicker" destination="yRd-bB-DEG" id="8xt-8j-h76"/>
+                        <outlet property="nextBtn" destination="dhl-cq-sEc" id="N49-lt-IBv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Baf-uO-Cha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zZV-Ij-E18" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2676" y="134"/>
+        </scene>
+        <!--Most Frequent TimesVC-->
+        <scene sceneID="Q2j-Zq-u4W">
+            <objects>
+                <viewController id="tiP-yb-lXi" customClass="MostFrequentTimesVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="so9-ZR-g4E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ago-zf-lrE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Softech (iOS App Proposal)" translatesAutoresizingMaskIntoConstraints="NO" id="9FB-l2-AKm">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9FB-l2-AKm" secondAttribute="trailing" id="5mT-hr-63G"/>
+                                    <constraint firstItem="9FB-l2-AKm" firstAttribute="top" secondItem="Ago-zf-lrE" secondAttribute="top" id="Kdb-Xf-XIV"/>
+                                    <constraint firstAttribute="bottom" secondItem="9FB-l2-AKm" secondAttribute="bottom" id="nwx-Bg-pGd"/>
+                                    <constraint firstItem="9FB-l2-AKm" firstAttribute="leading" secondItem="Ago-zf-lrE" secondAttribute="leading" id="p5g-8p-E4u"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNN-ay-lUK">
+                                <rect key="frame" x="0.0" y="518.66666666666663" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="eOM-Ih-3Et">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="98"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month : June" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMr-3x-RiW">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="23.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day : Tuesday" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJk-p3-uko">
+                                                <rect key="frame" x="0.0" y="37.333333333333371" width="343" height="23.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Hour : 17" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHz-yx-i44">
+                                                <rect key="frame" x="0.0" y="74.666666666666742" width="343" height="23.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eOM-Ih-3Et" secondAttribute="trailing" constant="16" id="IxD-6T-y7r"/>
+                                    <constraint firstItem="eOM-Ih-3Et" firstAttribute="leading" secondItem="VNN-ay-lUK" secondAttribute="leading" constant="16" id="UA1-4G-Qq5"/>
+                                    <constraint firstItem="eOM-Ih-3Et" firstAttribute="top" secondItem="VNN-ay-lUK" secondAttribute="top" id="eVJ-aO-Jj9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHN-Vd-O2P">
+                                <rect key="frame" x="0.0" y="259.33333333333337" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculating The Most Frequent Times of Travel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg2-eV-Djl">
+                                        <rect key="frame" x="16" y="95.666666666666686" width="343" height="68.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Wg2-eV-Djl" secondAttribute="trailing" constant="16" id="A49-jx-ctU"/>
+                                    <constraint firstItem="Wg2-eV-Djl" firstAttribute="centerX" secondItem="SHN-Vd-O2P" secondAttribute="centerX" id="GiH-KB-QTF"/>
+                                    <constraint firstItem="Wg2-eV-Djl" firstAttribute="leading" secondItem="SHN-Vd-O2P" secondAttribute="leading" constant="16" id="ZGf-QJ-Nh2"/>
+                                    <constraint firstItem="Wg2-eV-Djl" firstAttribute="centerY" secondItem="SHN-Vd-O2P" secondAttribute="centerY" id="gus-RC-zIW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-dz-vy2" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nGQ-8c-uPc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="adI-GS-0BT" kind="show" id="DL5-EC-Gs3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lQI-6b-yyg" firstAttribute="bottom" secondItem="VNN-ay-lUK" secondAttribute="bottom" id="6Zh-cu-EDj"/>
+                            <constraint firstItem="VNN-ay-lUK" firstAttribute="top" secondItem="SHN-Vd-O2P" secondAttribute="bottom" id="BxT-Na-F4i"/>
+                            <constraint firstItem="SHN-Vd-O2P" firstAttribute="leading" secondItem="lQI-6b-yyg" secondAttribute="leading" id="N4z-tu-Drw"/>
+                            <constraint firstItem="SHN-Vd-O2P" firstAttribute="height" secondItem="Ago-zf-lrE" secondAttribute="height" id="Qth-pc-Jsq"/>
+                            <constraint firstItem="Ago-zf-lrE" firstAttribute="top" secondItem="so9-ZR-g4E" secondAttribute="top" id="RYs-Dr-chJ"/>
+                            <constraint firstItem="VNN-ay-lUK" firstAttribute="leading" secondItem="lQI-6b-yyg" secondAttribute="leading" id="Vrc-Cu-hOp"/>
+                            <constraint firstAttribute="bottom" secondItem="yx2-dz-vy2" secondAttribute="bottom" constant="15" id="Yya-kc-uHQ"/>
+                            <constraint firstItem="Ago-zf-lrE" firstAttribute="trailing" secondItem="lQI-6b-yyg" secondAttribute="trailing" id="g1R-W1-knJ"/>
+                            <constraint firstItem="yx2-dz-vy2" firstAttribute="trailing" secondItem="so9-ZR-g4E" secondAttribute="trailingMargin" id="gTV-Ki-K1I"/>
+                            <constraint firstItem="VNN-ay-lUK" firstAttribute="trailing" secondItem="lQI-6b-yyg" secondAttribute="trailing" id="kSq-uF-wrS"/>
+                            <constraint firstItem="SHN-Vd-O2P" firstAttribute="top" secondItem="Ago-zf-lrE" secondAttribute="bottom" id="q7c-dp-g5j"/>
+                            <constraint firstItem="VNN-ay-lUK" firstAttribute="height" secondItem="Ago-zf-lrE" secondAttribute="height" id="uKj-CY-Br3"/>
+                            <constraint firstItem="SHN-Vd-O2P" firstAttribute="trailing" secondItem="lQI-6b-yyg" secondAttribute="trailing" id="uVN-tf-y7R"/>
+                            <constraint firstItem="yx2-dz-vy2" firstAttribute="leading" secondItem="so9-ZR-g4E" secondAttribute="leadingMargin" id="wb3-fC-pmX"/>
+                            <constraint firstItem="Ago-zf-lrE" firstAttribute="leading" secondItem="lQI-6b-yyg" secondAttribute="leading" id="y2d-SW-96G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lQI-6b-yyg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RkB-m1-b0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3542" y="27"/>
+        </scene>
+        <!--Most Popular StationsVC-->
+        <scene sceneID="T0J-4V-hsp">
+            <objects>
+                <viewController id="adI-GS-0BT" customClass="MostPopularStationsVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pko-f4-oq7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-wG-1zS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="400_F_119446960_552oNOjVw4uaBan3rixsYxNglw0ujXvf" translatesAutoresizingMaskIntoConstraints="NO" id="Nyw-rj-8Vc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nyw-rj-8Vc" firstAttribute="top" secondItem="7T7-wG-1zS" secondAttribute="top" id="6VO-0K-kNY"/>
+                                    <constraint firstItem="Nyw-rj-8Vc" firstAttribute="leading" secondItem="7T7-wG-1zS" secondAttribute="leading" id="6zr-mP-prQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nyw-rj-8Vc" secondAttribute="bottom" id="z21-n2-i1h"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nyw-rj-8Vc" secondAttribute="trailing" id="zMj-mr-McJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef9-66-tMX">
+                                <rect key="frame" x="0.0" y="518.66666666666663" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="CVK-ba-Yhn">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="107.33333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start/End Station : Streeter Dr &amp; Grand Ave / Streeter Dr &amp; Grand Ave" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d53-pi-f8I">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="46.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip : Lake Shore Dr &amp; Monroe StStreeter Dr &amp; Grand Ave" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqb-Ee-fWG">
+                                                <rect key="frame" x="0.0" y="60.666666666666742" width="343" height="46.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="CVK-ba-Yhn" firstAttribute="leading" secondItem="Ef9-66-tMX" secondAttribute="leading" constant="16" id="9S4-a7-gPR"/>
+                                    <constraint firstAttribute="trailing" secondItem="CVK-ba-Yhn" secondAttribute="trailing" constant="16" id="LL6-N4-htb"/>
+                                    <constraint firstItem="CVK-ba-Yhn" firstAttribute="top" secondItem="Ef9-66-tMX" secondAttribute="top" id="evN-K8-IUv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gx-WS-VgF">
+                                <rect key="frame" x="0.0" y="259.33333333333337" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Displays Statistics on the Most Popular Stations and Trip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFv-dQ-bNZ">
+                                        <rect key="frame" x="16" y="78.333333333333371" width="343" height="102.66666666666669"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="rFv-dQ-bNZ" firstAttribute="leading" secondItem="7gx-WS-VgF" secondAttribute="leading" constant="16" id="K2e-xl-6Eo"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFv-dQ-bNZ" secondAttribute="trailing" constant="16" id="M9I-Hh-Exy"/>
+                                    <constraint firstItem="rFv-dQ-bNZ" firstAttribute="centerY" secondItem="7gx-WS-VgF" secondAttribute="centerY" id="SrA-gQ-VuZ"/>
+                                    <constraint firstItem="rFv-dQ-bNZ" firstAttribute="centerX" secondItem="7gx-WS-VgF" secondAttribute="centerX" id="xhg-iU-A76"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-WF-lG2" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RCc-33-7XA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2cd-hA-sa8" kind="show" id="foO-CE-3dh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ef9-66-tMX" firstAttribute="trailing" secondItem="2Ku-uf-6fy" secondAttribute="trailing" id="70M-fE-V1M"/>
+                            <constraint firstItem="2Ku-uf-6fy" firstAttribute="bottom" secondItem="Ef9-66-tMX" secondAttribute="bottom" id="7GH-xc-wSG"/>
+                            <constraint firstItem="7T7-wG-1zS" firstAttribute="trailing" secondItem="2Ku-uf-6fy" secondAttribute="trailing" id="86Z-xu-NEi"/>
+                            <constraint firstItem="Wq5-WF-lG2" firstAttribute="trailing" secondItem="Pko-f4-oq7" secondAttribute="trailingMargin" id="AYt-Z5-sRL"/>
+                            <constraint firstItem="7T7-wG-1zS" firstAttribute="leading" secondItem="2Ku-uf-6fy" secondAttribute="leading" id="Ccb-s8-Ifi"/>
+                            <constraint firstItem="7gx-WS-VgF" firstAttribute="top" secondItem="7T7-wG-1zS" secondAttribute="bottom" id="ENL-aX-Emt"/>
+                            <constraint firstItem="Ef9-66-tMX" firstAttribute="top" secondItem="7gx-WS-VgF" secondAttribute="bottom" id="GrE-vQ-dRu"/>
+                            <constraint firstItem="Ef9-66-tMX" firstAttribute="leading" secondItem="2Ku-uf-6fy" secondAttribute="leading" id="dk3-bV-x5X"/>
+                            <constraint firstItem="7T7-wG-1zS" firstAttribute="top" secondItem="Pko-f4-oq7" secondAttribute="top" id="hGJ-Jk-HQg"/>
+                            <constraint firstItem="7gx-WS-VgF" firstAttribute="height" secondItem="7T7-wG-1zS" secondAttribute="height" id="izq-X0-Nsc"/>
+                            <constraint firstItem="7gx-WS-VgF" firstAttribute="leading" secondItem="2Ku-uf-6fy" secondAttribute="leading" id="jh7-tV-ssb"/>
+                            <constraint firstAttribute="bottom" secondItem="Wq5-WF-lG2" secondAttribute="bottom" constant="15" id="rJ9-4f-heN"/>
+                            <constraint firstItem="Wq5-WF-lG2" firstAttribute="leading" secondItem="Pko-f4-oq7" secondAttribute="leadingMargin" id="u54-Pp-Efp"/>
+                            <constraint firstItem="7gx-WS-VgF" firstAttribute="trailing" secondItem="2Ku-uf-6fy" secondAttribute="trailing" id="wkS-hy-se2"/>
+                            <constraint firstItem="Ef9-66-tMX" firstAttribute="height" secondItem="7T7-wG-1zS" secondAttribute="height" id="xfM-fj-nCc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Ku-uf-6fy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9h-Ra-XD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4348" y="134"/>
+        </scene>
+        <!--Total And Avg Trip DurationVC-->
+        <scene sceneID="ajt-fs-7W9">
+            <objects>
+                <viewController id="2cd-hA-sa8" customClass="TotalAndAvgTripDurationVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wwW-YA-qCC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6XS-CC-Xm8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new-statistics" translatesAutoresizingMaskIntoConstraints="NO" id="070-j5-EYJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="070-j5-EYJ" secondAttribute="trailing" id="BRK-ME-jOZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="070-j5-EYJ" secondAttribute="bottom" id="YHx-kX-qSA"/>
+                                    <constraint firstItem="070-j5-EYJ" firstAttribute="top" secondItem="6XS-CC-Xm8" secondAttribute="top" id="abL-X9-XiB"/>
+                                    <constraint firstItem="070-j5-EYJ" firstAttribute="leading" secondItem="6XS-CC-Xm8" secondAttribute="leading" id="jbt-Ch-oKW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwK-Yx-SqP">
+                                <rect key="frame" x="0.0" y="518.66666666666663" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="iUR-op-GlD">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="60.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Travel Time : 5757576 Sec" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNr-vs-ZSD">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="23.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mean Travel Time : 78475 Sec" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-vU-iPO">
+                                                <rect key="frame" x="0.0" y="37.333333333333371" width="343" height="23.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iUR-op-GlD" firstAttribute="leading" secondItem="gwK-Yx-SqP" secondAttribute="leading" constant="16" id="QlF-SM-UNU"/>
+                                    <constraint firstAttribute="trailing" secondItem="iUR-op-GlD" secondAttribute="trailing" constant="16" id="d0H-ka-PQY"/>
+                                    <constraint firstItem="iUR-op-GlD" firstAttribute="top" secondItem="gwK-Yx-SqP" secondAttribute="top" id="qjU-qR-kpq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyr-Sw-0Eq">
+                                <rect key="frame" x="0.0" y="259.33333333333337" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Displays Statistics on the Total and Average Trip Duration" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-BR-Rmk">
+                                        <rect key="frame" x="16" y="78.333333333333371" width="343" height="102.66666666666669"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7EL-BR-Rmk" firstAttribute="centerX" secondItem="xyr-Sw-0Eq" secondAttribute="centerX" id="1ol-5P-fO1"/>
+                                    <constraint firstItem="7EL-BR-Rmk" firstAttribute="centerY" secondItem="xyr-Sw-0Eq" secondAttribute="centerY" id="FXD-cv-FcZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7EL-BR-Rmk" secondAttribute="trailing" constant="16" id="Ywu-cN-9FE"/>
+                                    <constraint firstItem="7EL-BR-Rmk" firstAttribute="leading" secondItem="xyr-Sw-0Eq" secondAttribute="leading" constant="16" id="rXr-HG-RXH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcc-Aw-tHx" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AMX-7i-5iJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3hf-nd-ccD" kind="show" id="2E5-jT-Mv2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6XS-CC-Xm8" firstAttribute="top" secondItem="wwW-YA-qCC" secondAttribute="top" id="7Tl-iw-CzJ"/>
+                            <constraint firstItem="Lih-oX-eJh" firstAttribute="bottom" secondItem="gwK-Yx-SqP" secondAttribute="bottom" id="Dq8-1A-rB5"/>
+                            <constraint firstItem="xyr-Sw-0Eq" firstAttribute="trailing" secondItem="Lih-oX-eJh" secondAttribute="trailing" id="EKE-dB-NRn"/>
+                            <constraint firstItem="gwK-Yx-SqP" firstAttribute="leading" secondItem="Lih-oX-eJh" secondAttribute="leading" id="ETn-y0-8Iw"/>
+                            <constraint firstItem="gwK-Yx-SqP" firstAttribute="trailing" secondItem="Lih-oX-eJh" secondAttribute="trailing" id="UlM-zL-bRO"/>
+                            <constraint firstItem="xyr-Sw-0Eq" firstAttribute="height" secondItem="6XS-CC-Xm8" secondAttribute="height" id="VJ8-At-INU"/>
+                            <constraint firstItem="gwK-Yx-SqP" firstAttribute="top" secondItem="xyr-Sw-0Eq" secondAttribute="bottom" id="Xwq-f8-0eS"/>
+                            <constraint firstItem="Hcc-Aw-tHx" firstAttribute="leading" secondItem="wwW-YA-qCC" secondAttribute="leadingMargin" id="bqV-Hk-0pg"/>
+                            <constraint firstItem="xyr-Sw-0Eq" firstAttribute="top" secondItem="6XS-CC-Xm8" secondAttribute="bottom" id="eh0-nq-5c2"/>
+                            <constraint firstItem="6XS-CC-Xm8" firstAttribute="leading" secondItem="Lih-oX-eJh" secondAttribute="leading" id="fmW-in-G5o"/>
+                            <constraint firstItem="gwK-Yx-SqP" firstAttribute="height" secondItem="6XS-CC-Xm8" secondAttribute="height" id="iFk-Of-WC7"/>
+                            <constraint firstItem="Hcc-Aw-tHx" firstAttribute="trailing" secondItem="wwW-YA-qCC" secondAttribute="trailingMargin" id="k26-3q-8aT"/>
+                            <constraint firstItem="6XS-CC-Xm8" firstAttribute="trailing" secondItem="Lih-oX-eJh" secondAttribute="trailing" id="nFJ-NV-N3v"/>
+                            <constraint firstItem="xyr-Sw-0Eq" firstAttribute="leading" secondItem="Lih-oX-eJh" secondAttribute="leading" id="s3W-xN-3Yw"/>
+                            <constraint firstAttribute="bottom" secondItem="Hcc-Aw-tHx" secondAttribute="bottom" constant="15" id="tGt-xh-HQK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Lih-oX-eJh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwN-V7-OKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5145" y="140"/>
+        </scene>
+        <!--UsersVC-->
+        <scene sceneID="Y5L-iU-mcd">
+            <objects>
+                <viewController id="3hf-nd-ccD" customClass="UsersVC" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j0T-mb-yVf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRN-Um-HcE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Internet-users-India" translatesAutoresizingMaskIntoConstraints="NO" id="jIM-vY-CEe">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="259.33333333333331"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jIM-vY-CEe" firstAttribute="top" secondItem="SRN-Um-HcE" secondAttribute="top" id="8ea-ty-Q3c"/>
+                                    <constraint firstItem="jIM-vY-CEe" firstAttribute="leading" secondItem="SRN-Um-HcE" secondAttribute="leading" id="JgV-u5-Elm"/>
+                                    <constraint firstAttribute="bottom" secondItem="jIM-vY-CEe" secondAttribute="bottom" id="jnS-R9-363"/>
+                                    <constraint firstAttribute="trailing" secondItem="jIM-vY-CEe" secondAttribute="trailing" id="rNF-xw-DMl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVf-Mv-XEB">
+                                <rect key="frame" x="0.0" y="518.66666666666663" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5Fx-34-O8Q">
+                                        <rect key="frame" x="16" y="0.0" width="343" height="129.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscriber : 878878" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYp-eH-b2b">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="23.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer : 25645" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARp-LK-i7i">
+                                                <rect key="frame" x="0.0" y="35.333333333333371" width="343" height="23.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male : 52960" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO6-eQ-de9">
+                                                <rect key="frame" x="0.0" y="70.666666666666742" width="343" height="23.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female : 19508" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-AP-UXs">
+                                                <rect key="frame" x="0.0" y="106" width="343" height="23.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="5Fx-34-O8Q" firstAttribute="leading" secondItem="JVf-Mv-XEB" secondAttribute="leading" constant="16" id="Cya-9a-uQ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Fx-34-O8Q" secondAttribute="trailing" constant="16" id="Qas-Vg-Xzd"/>
+                                    <constraint firstItem="5Fx-34-O8Q" firstAttribute="top" secondItem="JVf-Mv-XEB" secondAttribute="top" id="T84-K0-pwL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMF-fb-cbg">
+                                <rect key="frame" x="0.0" y="259.33333333333337" width="375" height="259.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Displays Statistics on Bikeshare Users" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8f-3l-rbO">
+                                        <rect key="frame" x="16" y="95.666666666666686" width="343" height="68.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="w8f-3l-rbO" firstAttribute="centerX" secondItem="bMF-fb-cbg" secondAttribute="centerX" id="CtK-Q9-e2q"/>
+                                    <constraint firstAttribute="trailing" secondItem="w8f-3l-rbO" secondAttribute="trailing" constant="16" id="FoC-Fq-roV"/>
+                                    <constraint firstItem="w8f-3l-rbO" firstAttribute="leading" secondItem="bMF-fb-cbg" secondAttribute="leading" constant="16" id="PtZ-T0-tnz"/>
+                                    <constraint firstItem="w8f-3l-rbO" firstAttribute="centerY" secondItem="bMF-fb-cbg" secondAttribute="centerY" id="n0s-Jg-Ayu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h91-wX-NcB" customClass="BorderButtons" customModule="iOS_App_with_Bike_Sharing_Data" customModuleProvider="target">
+                                <rect key="frame" x="16" y="747" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="sf3-g6-bvJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="COMPLETE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bMF-fb-cbg" firstAttribute="trailing" secondItem="lS4-XD-Dmg" secondAttribute="trailing" id="37J-9e-sr5"/>
+                            <constraint firstItem="JVf-Mv-XEB" firstAttribute="leading" secondItem="lS4-XD-Dmg" secondAttribute="leading" id="6Lb-SQ-X3H"/>
+                            <constraint firstItem="SRN-Um-HcE" firstAttribute="trailing" secondItem="lS4-XD-Dmg" secondAttribute="trailing" id="BOu-qj-gY1"/>
+                            <constraint firstItem="bMF-fb-cbg" firstAttribute="leading" secondItem="lS4-XD-Dmg" secondAttribute="leading" id="Jeu-Wc-nYx"/>
+                            <constraint firstItem="JVf-Mv-XEB" firstAttribute="trailing" secondItem="lS4-XD-Dmg" secondAttribute="trailing" id="Jio-ry-0Ud"/>
+                            <constraint firstItem="lS4-XD-Dmg" firstAttribute="bottom" secondItem="JVf-Mv-XEB" secondAttribute="bottom" id="MrX-YP-zAO"/>
+                            <constraint firstItem="h91-wX-NcB" firstAttribute="leading" secondItem="j0T-mb-yVf" secondAttribute="leadingMargin" id="PMs-D2-MVI"/>
+                            <constraint firstAttribute="bottom" secondItem="h91-wX-NcB" secondAttribute="bottom" constant="15" id="RZJ-rq-6ig"/>
+                            <constraint firstItem="bMF-fb-cbg" firstAttribute="top" secondItem="SRN-Um-HcE" secondAttribute="bottom" id="Rwr-Y1-QQF"/>
+                            <constraint firstItem="SRN-Um-HcE" firstAttribute="leading" secondItem="lS4-XD-Dmg" secondAttribute="leading" id="Uio-tu-ZLU"/>
+                            <constraint firstItem="SRN-Um-HcE" firstAttribute="top" secondItem="j0T-mb-yVf" secondAttribute="top" id="VMy-nb-nL4"/>
+                            <constraint firstItem="bMF-fb-cbg" firstAttribute="height" secondItem="SRN-Um-HcE" secondAttribute="height" id="XHt-WT-PvJ"/>
+                            <constraint firstItem="JVf-Mv-XEB" firstAttribute="top" secondItem="bMF-fb-cbg" secondAttribute="bottom" id="fUn-NR-PZ6"/>
+                            <constraint firstItem="JVf-Mv-XEB" firstAttribute="height" secondItem="SRN-Um-HcE" secondAttribute="height" id="hdJ-6J-D9Z"/>
+                            <constraint firstItem="h91-wX-NcB" firstAttribute="trailing" secondItem="j0T-mb-yVf" secondAttribute="trailingMargin" id="sVI-NO-WPB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lS4-XD-Dmg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gY0-QN-FF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6025" y="140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1200px-Melbourne_City_Bikes" width="375" height="667"/>
+        <image name="400_F_119446960_552oNOjVw4uaBan3rixsYxNglw0ujXvf" width="400" height="250"/>
+        <image name="Internet-users-India" width="472.5" height="354"/>
+        <image name="Softech (iOS App Proposal)" width="2000" height="1500"/>
+        <image name="bike-share-for-all-image" width="375" height="667"/>
+        <image name="new-statistics" width="660" height="220"/>
+    </resources>
+</document>
